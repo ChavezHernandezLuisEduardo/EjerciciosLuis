@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+</head>
+
+<body>
+    <h1>Ejercicio 15 MOSTRAR DEFINICIONES DE ESTUDIANTES</h1>
+    <form>
+        <label for="numero">Ingrese el nombre del estudiante</label>
+        <br>    
+        <input type="text" id="numero" name="numero" placeholder="Nombre del estudiante" required>
+        <br>
+        <label for="calificacion">Ingrese la calificacion del estudiante</label>
+        <br>
+        <input type="number" id="calificacion" name="calificacion" placeholder="Calificacion del estudiante" required>
+    <br>
+        <button type="button" onclick="agregarEstudiante(),showestudiantes()">Agregar estudiante</button>
+        <button type="button" onclick="operaciones()">Calcular</button>
+    </form>
+    <br>
+    <p>Lista de estudiantes:</p>
+    <div id="estudiantesList">
+
+    </div>
+    <div>
+        <input type="text" id="mayor" readonly placeholder="calificacion promedio">
+    </div>
+    <div>   
+        <input type="text" id="menor" readonly placeholder="estudiante mas bajo">
+    </div>
+    <div>
+        <input type="text" id="promedio" readonly placeholder="estudiante mas alto">
+    </div>
+<script src="js/ejercicio15.js">
+
+</script>
+    
+</body>
+</html>
+
+
+
+
